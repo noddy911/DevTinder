@@ -119,3 +119,34 @@ Contributions are welcome. If you would like to improve the project, please fork
 ## License
 
 This project is licensed under the MIT License.
+
+# Dependencies
+
+node_modules/
+
+# Environment variables
+
+.env
+
+# Logs
+
+\*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE files
+
+.vscode/
+.idea/
+
+# Build folders
+
+dist/
+build/
+
+# Coverage reports
+
+coverage/
