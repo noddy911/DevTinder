@@ -12,9 +12,17 @@ app.get("/users", (req, res) => {
   });
 });
 
-app.post("/users", (req, res) => {
-  res.send("Data is saved to data base");
-});
+app.post(
+  "/users",
+  (req, res, next) => {
+    console.log("1 route is working");
+    // res.send("Data is saved to data base")
+    next();
+  },
+  (req, res) => {
+    console.log("2 route is working");
+  },
+);
 app.use("/test", (req, res) => {
   console.log("This is test route");
   res.send("Hello world");
