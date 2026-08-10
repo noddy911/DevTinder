@@ -11,16 +11,12 @@ const userSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    // required: true,
-    // unique: true
+    required: true,
+    unique: true,
   },
   password: {
     type: String,
-    // required: [true, "Password is required"],
-  },
-  confirmPassword: {
-    type: String,
-    // required: [true, "Please confirm your password"],
+    required: [true, "Password is required"],
   },
 });
 
